@@ -28,7 +28,7 @@ const LineChart = () => {
   };
 
   return (
-    <div id="chart">
+    <div id="chart" className="mt-2">
       <ReactApexChart options={options} series={series} type="line" height={350} />
     </div>
   );
