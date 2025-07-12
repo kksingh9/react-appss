@@ -4,7 +4,7 @@ import { LogsIcon } from "lucide-react";
 const Sidebar = () => {
   return (
     <>
-    <div className=" w-[220px] border-r-1 h-full">
+    <div className=" w-[100%] border-r-1 h-full">
       <div className="flex p-4 gap-2">
         <span>
           <LogsIcon />
@@ -23,7 +23,7 @@ const Sidebar = () => {
         <span>Upgrade to Pro</span>
         <span>Get 1 month free</span>
         <span>and unlock</span>
-        <span className="p-5 border-0 bg-grey-300 rounded-[50px] flex justify-center">upgrade</span>
+        <span className="p-5 border-0 bg-gray-300 rounded-[50px] flex justify-center">upgrade</span>
       </div>
 
       {sideFooter.map((item) => (
