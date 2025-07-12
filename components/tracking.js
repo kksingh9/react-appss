@@ -2,7 +2,7 @@ import { trackData } from "@/constants/sidebarData";
 
 const Tracking = () => {
   return (
-    <div className="flex w-full shadow-md rounded-md bg-white border-t-1 border-gray-50 ">
+    <div className="flex w-full shadow-md rounded-md bg-white border-t-1 border-gray-50 mb-4 ">
       {trackData.map((item, index) => (
         <div
           key={`${index}ff`}
