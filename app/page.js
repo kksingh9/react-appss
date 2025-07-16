@@ -15,7 +15,7 @@ export default function Home() {
       <Sidebar />
     </div>
 
-    <div className="w-[53%] h-full overflow-y-auto p-4 border-r border-gray-200">
+    <div className="w-[54%] h-full overflow-y-auto p-4 border-r border-gray-200">
       <HeaderComponent />
       <Tracking />
       <LineChart />
