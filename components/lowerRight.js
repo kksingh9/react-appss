@@ -12,7 +12,8 @@ const LowerRight = () => {
       <div className="flex w-[100%] h-[370px] flex-col m-2 my-4 overflow-y-auto">
         {lowerRightData?.map((item, index) => (
           <div key={`${index}dfd`}>
-            <div className="flex">
+            <div className="flex justify-between">
+              <div className="flex">
               <span className="flex w-[40px] h-[40px] justify-center items-center bg-gray-300 rounded-full font-bold ">
                 {item.name[0]}
               </span>
@@ -27,6 +28,7 @@ const LowerRight = () => {
                     {item.project}
                   </span>
                 </div>
+              </div>
               </div>
               <span>{item.hours}</span>
             </div>

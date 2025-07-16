@@ -8,7 +8,7 @@ import Button from "./Button/Button";
 
 const RightHeader = () => {
   return (
-    <div className="m-2 flex flex-col items-center w-[97%] bg-[#f2f2f2] p-6 rounded-2xl">
+    <div className="m-2 flex flex-col items-center w-[100%] bg-[#f2f2f2] p-6 rounded-2xl">
       {/* Avatar */}
       <div className="relative">
         <div className="w-[100px] h-[100px] rounded-full overflow-hidden bg-amber-200 flex items-center justify-center">

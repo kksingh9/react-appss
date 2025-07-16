@@ -39,6 +39,7 @@ const DatePickerWrapper = () => {
           </div>
         </div>
       }
+      calendarClassName="bg-white text-gray-800 shadow-lg border border-gray-200 rounded-md p-2 z-50"
     />
     </div>
   );
