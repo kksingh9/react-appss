@@ -1,5 +1,15 @@
-import { Calendar } from "lucide-react";
+'use client';
+
+import { useState } from 'react';
+
+import dynamic from 'next/dynamic';
+
+const DatePickerWrapper = dynamic(() => import('../components/DatePickerWrapper'), {
+  ssr: false,
+});
+
 const HeaderComponent = () => {
+  const [date, setDate] = useState("")
   return (
     <>
       <div>
@@ -10,9 +20,8 @@ const HeaderComponent = () => {
           </div>
 
           <div className="flex gap-2 w-[180px]">
-            <span>16 May, 2023 </span>
-
-            <Calendar />
+                    
+           <DatePickerWrapper/>
           </div>
         </div>
       </div>

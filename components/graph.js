@@ -4,7 +4,9 @@ import React from "react";
 import dynamic from "next/dynamic";
 
 // Dynamically import with SSR disabled
-const ReactApexChart = dynamic(() => import("react-apexcharts"), { ssr: false });
+const ReactApexChart = dynamic(() => import("react-apexcharts"), {
+  ssr: false,
+});
 
 const LineChart = () => {
   const series = [
@@ -23,13 +25,28 @@ const LineChart = () => {
       text: "Performance",
     },
     xaxis: {
-      categories: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep"],
+      categories: [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+      ],
     },
   };
 
   return (
-    <div id="chart" >
-      <ReactApexChart options={options} series={series} type="line" height={350} />
+    <div id="chart">
+      <ReactApexChart
+        options={options}
+        series={series}
+        type="line"
+        height={350}
+      />
     </div>
   );
 };

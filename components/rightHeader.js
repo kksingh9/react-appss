@@ -1,46 +1,48 @@
 import {
   PhoneCallIcon,
   VideoIcon,
-  DotIcon,
+  MoreVerticalIcon,
   ImageIcon,
 } from "lucide-react";
+import Button from "./Button/Button";
 
 const RightHeader = () => {
   return (
-    <>
-      <div className="m-2 flex flex-col justify-center w-[97%] bg-gray-100 p-4 rounded-2xl">
-        <div className="flex justify-center">
-          <span className="w-[100px] h-[100px] rounded-full bg-amber-200 flex justify-center items-center">
-            {" "}
-            <ImageIcon />
-          </span>
+    <div className="m-2 flex flex-col items-center w-[97%] bg-[#f2f2f2] p-6 rounded-2xl">
+      {/* Avatar */}
+      <div className="relative">
+        <div className="w-[100px] h-[100px] rounded-full overflow-hidden bg-amber-200 flex items-center justify-center">
+          {/* Replace with real image if available */}
+          <ImageIcon className="w-10 h-10 text-white" />
         </div>
-        <div className="flex justify-center">
-          <span>Megan Norton</span>
-          </div>
-          <div className="flex justify-center">
-          <span>@megnorton</span>
-          </div>
-        
-        <div className="flex gap-2 justify-center">
-        <div className="w-[60px] h-[40px] rounded-full bg-gray-600 flex justify-center items-center">
-          <span>
-            <PhoneCallIcon className="text-amber-50" />
-          </span>
-          </div>
-          <div className="w-[60px] h-[40px] rounded-full bg-gray-600 flex justify-center items-center">
-          <span>
-            <VideoIcon className="text-amber-50" />
-          </span>
-          </div>
-          <div className="w-[60px] h-[40px] rounded-full bg-gray-600 flex justify-center items-center">
-          <span>
-            <DotIcon className="text-amber-50"/>
-          </span>
-          </div>
-        </div>
+        {/* Red Status Dot */}
+        <span className="absolute bottom-2 right-2 w-4 h-4 bg-red-500 border-2 border-white rounded-full"></span>
       </div>
-    </>
+
+      {/* Name */}
+      <div className="mt-4 text-center">
+        <div className="text-lg font-semibold text-gray-900">Megan Norton</div>
+        <div className="text-sm text-gray-500">@megnorton</div>
+      </div>
+
+      {/* Action Buttons */}
+      <div className="mt-6 flex gap-4">
+        <Button
+          className="w-12 h-12 rounded-full bg-white shadow flex items-center justify-center"
+          text={<PhoneCallIcon className="text-gray-700" />}
+        />
+
+        <Button
+          className="w-12 h-12 rounded-full bg-white shadow flex items-center justify-center"
+          text={<VideoIcon className="text-gray-700" />}
+        />
+
+        <Button
+          className="w-12 h-12 rounded-full bg-white shadow flex items-center justify-center"
+          text={<MoreVerticalIcon className="text-gray-700" />}
+        />
+      </div>
+    </div>
   );
 };
 
