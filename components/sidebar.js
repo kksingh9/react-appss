@@ -9,8 +9,8 @@ const Sidebar = () => {
   const [footer, setFooter] = useState("")
   return (
     <>
-      <div className=" w-[100%] border-r-1 h-full border-gray-300">
-        <div className="flex p-4 gap-2">
+      <div className=" w-[100%] border-r-1 h-full border-gray-300 p-2">
+        <div className="flex p-4 pl-2 gap-2">
           <span>
             <LogsIcon />
           </span>
@@ -20,7 +20,7 @@ const Sidebar = () => {
         {sidesData.map((item) => (
           <div
             key={item.data}
-            className={`flex gap-2 p-4  cursor-pointer hover:text-[black] ${
+            className={`flex gap-2 p-4 pl-2  cursor-pointer hover:text-[black] ${
               item.data === clickItem ? "font-bold text-[black]" : "text-[gray]"
             }`}
             onClick={() => {setClickItem(item.data)}}
@@ -29,8 +29,8 @@ const Sidebar = () => {
             <span>{item.data}</span>
           </div>
         ))}
-
-        <div className="m-4 flex flex-col justify-center w-[90%] bg-gradient-to-b from-gray-200 to-gray-50 p-4 rounded-t-2xl">
+        
+        <div className=" flex flex-col justify-center  bg-gradient-to-b from-gray-200 to-gray-50 p-4 rounded-t-2xl">
           <div className="flex justify-center">
             <span className="font-bold">Upgrade to Pro</span>
           </div>
