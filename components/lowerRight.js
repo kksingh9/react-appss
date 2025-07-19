@@ -9,7 +9,7 @@ const LowerRight = () => {
         <span className="mx-4 text-gray-500 text-sm uppercase">Active</span>
         <div className="flex-grow border-t border-gray-300"></div>
       </div>
-      <div className="flex w-[100%] max-h-[50%] flex-col m-2 my-4 overflow-y-auto">
+      <div className="flex w-[100%] max-h-[50%] flex-col p-2 my-4 overflow-y-auto">
         {lowerRightData?.map((item, index) => (
           <div key={`${index}dfd`}>
             <div className="flex justify-between">
@@ -23,7 +23,7 @@ const LowerRight = () => {
                   <span className="text-[#a9a9a9] text-[14px]">
                     {"Commented on "}
                   </span>
-                  <span className="text-[#76abc5] text-[14px]">
+                  <span className="text-[#76abc5] text-[14px] cursor-pointer">
                     {" "}
                     {item.project}
                   </span>

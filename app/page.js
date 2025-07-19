@@ -9,20 +9,22 @@ import LowerRight from "@/components/lowerRight";
 
 export default function Home() {
   return (
-    <div className="flex w-full h-screen">
-
-    <div className="w-[20%] h-full">
+    <div className="flex w-full h-screen overflow-hidden">
+    {/* Sidebar */}
+    <div className="w-[20%] h-full flex-shrink-0">
       <Sidebar />
     </div>
-
-    <div className="w-[54%] h-full overflow-y-auto p-4 border-r border-gray-200">
+  
+    {/* Main content */}
+    <div className="w-[55%] h-full overflow-y-auto p-4 border-r border-gray-200">
       <HeaderComponent />
       <Tracking />
       <LineChart />
       <CurrentTasks />
     </div>
   
-    <div className="w-[25%] h-full">
+    {/* Right panel */}
+    <div className="w-[25%] h-full overflow-y-auto flex-shrink-0 ">
       <RightHeader />
       <LowerRight />
     </div>
