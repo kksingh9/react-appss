@@ -17,7 +17,7 @@ const CustomInput = forwardRef(({ value, onClick }, ref) => (
     </div>
   </div>
 ));
-
+CustomInput.displayName = 'CustomInput';
 const CalendarPicker = () => {
   const [date, setDate] = useState(new Date());
 
